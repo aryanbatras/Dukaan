@@ -1,0 +1,1119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: palegoldenrod;
+    color: black;
+
+    height: 100%;
+    width: 100%;
+}
+
+
+img{
+    width: 3.6vw;
+    height: auto;
+    object-fit: cover;
+    margin: 2px;
+    opacity: 0.8;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    display: block;
+}
+
+
+
+
+
+
+
+/* NAVIGATION */
+nav{
+    height: 8vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 2vw 1vw;
+}
+
+
+nav .left{
+    font-size: 3.2vw;
+    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    letter-spacing: 4px;
+    opacity: 0.6;
+}
+
+
+nav .right{
+    height: 4vh;
+    width: 44vw;
+    background: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .right .searchbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    height: 4vh;
+    width: 36vw;
+    background: none;
+
+    border: none;
+    box-shadow: 2px 0.8px 2px rgba(0, 0, 0, 0.184);
+}
+
+nav .right .searchbar input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-shadow: inset 3px 4px 3px rgba(0, 0, 0, 0.2);
+
+    font-size: 1.8vw;
+    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.233);
+    opacity: 0.75;
+    padding: 4px;
+}
+
+
+
+
+/* BACKGROUND */
+
+.hero{
+    height: auto;
+    width: 100%;
+    background: none;
+}
+
+
+.hero #dukaanbg{
+    height: auto;
+    width: 99.8%;
+    object-fit: cover;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
+
+/* SLIDER ANIMATION */
+.hero .slidercontainer{
+    height: 7vh;
+    width: 100%;
+    background: none;
+    overflow: hidden; 
+}
+.hero .slider{
+    width: 95%;
+    background: none;
+    text-transform: uppercase;
+    padding: 1vw;
+
+    animation: slider 25s infinite ease;
+    white-space: nowrap;
+}
+
+@keyframes slider{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.hero .slider span{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 2.45vw;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+
+/* HERO BUTTONS */
+
+.hero .herobtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2vh;
+}
+
+.hero .herobtns button{
+    padding: 2vw 6vw;
+    font-size: 28px;
+    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+    border: none;
+    box-shadow: 4px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+/* PAGE 1 */
+.page1{
+    height: 70vh;
+    width: auto;
+    background: none;
+    padding: 2vw 0vw;
+}
+
+.page1 .buttons{
+    height: 66vh;
+    width: 100%;
+    background: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.page1 .buttons button{
+    height: 16vh;
+    width: 100%;
+
+    padding: 2vw 6vw;
+    font-size: 28px;
+    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+    border: none;
+    box-shadow: 4px 2px 4px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGE 2 */
+.page2{
+    height: auto;
+    width: 100%;
+    background: none;
+}
+
+
+
+
+
+
+/* BEST SELLER CONTAINER */
+.bestseller{
+    height: auto;
+    width: 100%;
+    background: palegoldenrod;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bestseller h1{
+    font-size: 4vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bestseller h1 button{
+    padding: 4px 8px;
+    margin: 2vh 4vw;
+
+    font-size: 3.2vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 6px;
+
+    border: none;
+    border-radius: 4px;
+    background: rgba(216, 112, 147, 0.3);
+    box-shadow: 4px 4px 8px 4px rgba(216, 112, 147, 0.5);;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BEST SELLER FIRST CONTAINER */
+.bestseller .firstcontainer{
+    height: auto;
+    width: 100%;
+    background: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+/* EACH PRODUCT */
+.bestseller .firstcontainer .p{
+    height: auto;
+    width: 28vw;
+
+    background: rgba(238, 130, 238, 0.2);
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+    margin: 4px;
+    padding: 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease;
+}
+
+
+.bestseller .firstcontainer .p img{
+    width: 16vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.bestseller .firstcontainer .p .pname{
+    font-size: 1.8vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+
+    height: 8vh;
+    width: 24vw;
+    background: none;
+    text-decoration: none;
+
+
+}
+
+.bestseller .firstcontainer .p .pinfo{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5vw;
+    gap: 1.5vw;
+}
+
+.bestseller .firstcontainer .p .pinfo .pprice{
+    font-size: 1.8vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+.bestseller .firstcontainer .p button{
+    text-wrap: nowrap;
+
+    padding: 1.2vh 4.2vw;
+
+    border: none;
+    border-radius: 4px;
+    background: black;
+    color: white;
+
+    font-size: 1.6vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BEST SELLER SECOND CONTAINER */
+.bestseller .secondcontainer{
+    height: auto;
+    width: 100%;
+    background: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    overflow: hidden;
+}
+
+
+
+
+/* EACH PRODUCT */
+.bestseller .secondcontainer .p{
+    height: auto;
+    width: 28vw;
+
+    background: rgba(238, 130, 238, 0.2);
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+    margin: 4px;
+    padding: 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease;
+}
+
+
+.bestseller .secondcontainer .p img{
+    width: 16vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.bestseller .secondcontainer .p .pname{
+    font-size: 1.8vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+
+    height: 8vh;
+    width: 24vw;
+    background: none;
+
+
+}
+
+.bestseller .secondcontainer .p .pinfo{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5vw;
+    gap: 1.5vw;
+}
+
+.bestseller .secondcontainer .p .pinfo .pprice{
+    font-size: 1.8vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+.bestseller .secondcontainer .p button{
+    text-wrap: nowrap;
+
+    padding: 1.2vh 4.2vw;
+
+    border: none;
+    border-radius: 4px;
+    background: black;
+    color: white;
+
+    font-size: 1.6vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+.page2 .loadmore{
+    padding: 1vw;
+    text-align: center;
+}
+
+.page2 .loadmore button{
+    padding: 2vw 8vw;
+
+    font-size: 2.5vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+
+    border: none;
+    border-radius: 4px;
+    box-shadow: 4px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAGE 3 */
+.page3{
+    height: auto;
+    width: 100%;
+    background: none;
+}
+
+
+
+
+
+
+/* BEST SELLER CONTAINER */
+.moreproducts{
+    height: auto;
+    width: 100%;
+    background: palegoldenrod;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.moreproducts h1{
+    font-size: 4vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.moreproducts h1 button{
+    padding: 4px 8px;
+    margin: 2vh 4vw;
+
+    font-size: 3.2vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 6px;
+
+    border: none;
+    border-radius: 4px;
+    background: rgba(216, 112, 147, 0.3);
+    box-shadow: 4px 4px 8px 4px rgba(216, 112, 147, 0.5);;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BEST SELLER FIRST CONTAINER */
+.moreproducts .firstcontainer{
+    height: auto;
+    width: 100%;
+    background: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+/* EACH PRODUCT */
+.moreproducts .firstcontainer .p{
+    height: auto;
+    width: 28vw;
+
+    background: rgba(238, 130, 238, 0.2);
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+    margin: 4px;
+    padding: 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease;
+}
+
+
+.moreproducts .firstcontainer .p img{
+    width: 16vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.moreproducts .firstcontainer .p .pname{
+    font-size: 1.8vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+
+    height: 8vh;
+    width: 24vw;
+    background: none;
+
+
+}
+
+.moreproducts .firstcontainer .p .pinfo{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5vw;
+    gap: 1.5vw;
+}
+
+.moreproducts .firstcontainer .p .pinfo .pprice{
+    font-size: 1.8vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+.moreproducts .firstcontainer .p button{
+    text-wrap: nowrap;
+    padding: 1.2vh 4.2vw;
+
+    border: none;
+    border-radius: 4px;
+    background: black;
+    color: white;
+
+    font-size: 1.6vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BEST SELLER SECOND CONTAINER */
+.moreproducts .secondcontainer{
+    height: auto;
+    width: 100%;
+    background: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    overflow: hidden;
+}
+
+
+
+
+/* EACH PRODUCT */
+.moreproducts .secondcontainer .p{
+    height: auto;
+    width: 28vw;
+
+    background: rgba(238, 130, 238, 0.2);
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+    margin: 4px;
+    padding: 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 2s ease;
+}
+
+
+.moreproducts .secondcontainer .p img{
+    width: 16vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.moreproducts .secondcontainer .p .pname{
+    font-size: 1.8vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+
+    height: 8vh;
+    width: 24vw;
+    background: none;
+
+
+}
+
+.moreproducts .secondcontainer .p .pinfo{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5vw;
+    gap: 1.5vw;
+}
+
+.moreproducts .secondcontainer .p .pinfo .pprice{
+    font-size: 1.8vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+.moreproducts .secondcontainer .p button{
+    text-wrap: nowrap;
+    padding: 1.2vh 4.2vw;
+
+    border: none;
+    border-radius: 4px;
+    background: black;
+    color: white;
+
+    font-size: 1.6vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+
+
+
+.page3 .loadmore{
+    padding: 1vw;
+    text-align: center;
+}
+
+.page3 .loadmore button{
+    padding: 2vw 8vw;
+
+    font-size: 2.5vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+
+    border: none;
+    border-radius: 4px;
+    box-shadow: 4px 2px 4px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CATEGORY BUTTONS */
+.page4{
+    height: 62vh;
+    width: auto;
+}
+
+.page4 .buttons{
+    height: 62vh;
+    width: 100%;
+    background: none;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.page4 .buttons button{
+    height: 16vh;
+    width: 100%;
+
+    padding: 2vw 6vw;
+    font-size: 28px;
+    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+    border: none;
+    box-shadow: 4px 2px 4px 2px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    letter-spacing: 4px;
+    gap: 4vw;
+}
+
+.page4 .buttons button img{
+    width: 6vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    height: 50vh;
+    width: auto;
+    
+    background: linear-gradient(rgba(172, 255, 47, 0.3), white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer .left, footer .right{
+    height: 32vh;
+    width: 32vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 24px;
+    gap: 18px;
+
+    text-decoration: underline rgba(0, 0, 0, 0.1);
+
+    font-size: 14px;
+    font-weight: 200;
+    font-family: "Montserrat";
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    border: none;
+    background: none;
+}
+
+footer span{
+    cursor: pointer;
+    color: black;
+
+    text-align: center;
+    padding: 4px 8px;
+    text-wrap: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* HOVER */
+
+
+nav .left:hover, nav .right .searchbar:hover, nav .right .user:hover, .hero .herobtns button:hover,.page1 .buttons button:hover, .page2 .bestseller h1 button:hover, .page3 .moreproducts h1 button:hover, .page2 .loadmore button:hover, .page3 .loadmore button:hover, .page4 .buttons button:hover, footer span:hover{
+    background-color: rgba(216, 112, 147, 0.5);
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.bestseller .firstcontainer .p:hover,.bestseller .secondcontainer .p:hover, .moreproducts .firstcontainer .p:hover, .moreproducts .secondcontainer .p:hover{
+    background-color: palevioletred;
+}
+
+.bestseller .firstcontainer .p img:hover,.bestseller .secondcontainer .p img:hover, .moreproducts .firstcontainer .p img:hover, .moreproducts .secondcontainer .p img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.bestseller .firstcontainer .p button:hover, .bestseller .secondcontainer .p button:hover, .moreproducts .firstcontainer .p button:hover, .moreproducts .secondcontainer .p button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+
+
+
+/* ACTIVE */
+
+
+.hero .herobtns button:active, .page1 .buttons button:active, .page2 .bestseller h1 button:active, .page3 .moreproducts h1 button:active, .page2 .loadmore button:active, .page3 .loadmore button:active, .page4 .buttons button:active, footer span:active{
+    background-color: rgba(216, 112, 147, 1);
+    cursor: pointer;
+    border-radius: 8px;
+
+    box-shadow: inset 4px 2px 4px 2px rgba(0, 0, 0, 0.157);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 900px){
+    nav .right{
+        width: 26vw;
+        gap: 4vw;
+    }
+    nav .right img{
+        width: 2vw;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

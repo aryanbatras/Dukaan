@@ -1,0 +1,537 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    color: black;
+    background: rgb(233, 233, 233);
+}
+
+
+img{
+    height: auto;
+    width: 3.2vw;
+    object-fit: cover;
+    margin: 4px;
+}
+
+a{
+    color: none;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* NAVIGATION */
+nav{
+    height: 8vh;
+    width: auto;
+
+    padding: 8px;
+    color: white;
+    background: rgba(172, 255, 47, 0.3);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .left{
+    font-size: 32px;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    padding: 8px;
+}
+
+
+
+/* ABSOLUTE STUFF */
+.page{
+    position: absolute;
+    top: 8.5%;
+    left: 4%;
+
+    font-weight: 200;
+    font-size: 1.6vw;
+    letter-spacing: 4px;
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.heart{
+    cursor: pointer;
+    position: absolute;
+    left: 92%;
+    top: 12%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN CONTAINER */
+.main{
+    height: 132vh;
+    width: 98vw;
+
+    background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(172, 255, 47, 0.3));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: top;
+
+    padding: 1.5vh;
+}
+
+
+
+
+
+
+
+
+/* PRODUCT */
+.main > .product{
+    height: 52vh;
+    width: 92vw;
+
+    background: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+
+}
+
+
+
+
+
+/* IMAGE VIEWER */
+
+.main .left{
+    background: none;
+    height: 50vh;
+    width: 46vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.main .left > img{
+    width: 32vw;
+    height: auto;
+    object-fit: cover;
+    margin: 1vh;
+}
+
+.main .left .moreimg > img{
+
+    border: none;
+    border-radius: 50%;
+
+    height: 6vw;
+    width: auto;
+    object-fit: cover;
+
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+/* PRODUCT DETAILS */
+.main .right{
+    height: 50vh;
+    width: 44vw;
+    background: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding: 2vw;
+    
+}
+
+
+.main .right .title{
+    font-size: 4vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.8vw;
+
+    border-bottom: 2.5px solid rgba(0, 0, 0, 0.4);
+    padding-bottom: 1vh;
+
+    height: 30vh;
+}
+
+.main .right .price{
+    font-size: 3vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    padding: 2vw;
+    text-align: center;
+}
+
+.main .right button{
+    height: 6vh;
+    width: 100%;
+
+    background: black;
+    color: white;
+
+    font-size: 2.5vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+/* PRODUCT DESCRIPTION */
+.main .details{
+    padding: 2vw;
+    height: 32vh;
+    width: auto;
+    background: rgba(238, 130, 238, 0.26);
+
+    border: none;
+    border-radius: 8px;
+}
+
+.main .details h1{
+    font-size: 4vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+
+    margin-bottom: 4px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: underline 2px rgba(0, 0, 0, 0.3);
+}
+
+.main .details p{
+    font-size: 16px;
+    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* SIMILAR PRODUCTS */
+.similar{
+    height: 42vh;
+    width: auto;
+    background: palegoldenrod;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.similar h1{
+    font-size: 4vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.similar h1 button{
+    padding: 4px 8px;
+    margin: 2vh 4vw;
+
+    font-size: 3.2vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 6px;
+
+    border: none;
+    border-radius: 4px;
+    background: rgba(216, 112, 147, 0.3);
+    box-shadow: 4px 4px 8px 4px rgba(216, 112, 147, 0.5);;
+
+}
+
+
+
+
+
+/* SIMILAR CONTAINER */
+.similar .container{
+    height: 32vh;
+    width: 100%;
+    background: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+/* EACH PRODUCT */
+.similar .container .p{
+    height: 31vh;
+    width: 28vw;
+
+    background: rgba(238, 130, 238, 0.2);
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+    margin: 4px;
+    padding: 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 2s ease;
+}
+
+
+.similar .container .p img{
+    width: 16vw;
+    height: auto;
+    object-fit: cover;
+}
+
+.similar .container .p .pname{
+    font-size: 1.8vw;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+
+    height: 8vh;
+    width: 24vw;
+    background: none;
+
+
+}
+
+.similar .container .p .pinfo{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5vw;
+    gap: 1.5vw;
+}
+
+.similar .container .p .pinfo .pprice{
+    font-size: 1.8vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+
+}
+
+.similar .container .p button{
+    padding: 1.2vh 4.2vw;
+
+    border: none;
+    border-radius: 4px;
+    background: black;
+    color: white;
+
+    font-size: 1.6vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    height: 50vh;
+    width: auto;
+    
+    background: linear-gradient(rgba(172, 255, 47, 0.3), white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer .left, footer .right{
+    height: 32vh;
+    width: 32vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 24px;
+    gap: 18px;
+
+    text-decoration: underline rgba(0, 0, 0, 0.1);
+
+    font-size: 14px;
+    font-weight: 200;
+    font-family: "Montserrat";
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    border: none;
+    background: none;
+}
+
+footer span{
+    cursor: pointer;
+    color: black;
+
+    text-align: center;
+    padding: 4px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HOVER EFFECT */
+
+footer span:hover{
+    background-color: palevioletred;
+    border-radius: 16px;
+    opacity: 0.8;
+}
+
+.container .p:hover{
+    background-color: palevioletred;
+}
+
+.container .p img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.container .p button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+.similar h1 button:hover{
+    background-color: palevioletred;
+    cursor: pointer;
+}
+
+
+
+.main .product .right button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.main .product .left .moreimg img{
+    cursor: pointer;
+}
+
+nav img:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+
+.page,.heart:hover{
+    cursor: pointer;
+}
+
+.main .product .left > img:hover{
+   width: 40vw;
+   transition: 0.8s;
+}
+
+
+/* ACTIVE */
+
+.similar h1 button:active{
+    box-shadow: inset 4px 4px 4px rgba(216, 112, 147, 0.8);
+    background-color: rgba(216, 112, 147, 0.3);
+}
+

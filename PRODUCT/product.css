@@ -1,0 +1,480 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+
+img{
+    height: auto;
+    width: 4vw;
+    object-fit: cover;
+}
+
+
+
+a{
+    color: none;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+
+
+
+
+/* GAP */
+.blank{
+    height: 12vh;
+    width: auto;
+    background: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* NAVIGATION */
+nav {
+    height: 6vh;
+    width: 100%;
+
+    background-color: white;
+    color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px;
+    
+
+    font-size: 18px;
+    font-weight: 200;
+    font-family: "Montserrat";
+    font-style: italic;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+
+    position: fixed;
+    z-index: 1;
+}
+
+
+nav .left{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+nav .right{
+    height: 8vh;
+    width: 22vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav .right div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MENU */
+.menu{
+    height: 6vh;
+    width: 100vw;
+
+    background: white;
+
+    padding: 8px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    transform: translateY(100%);
+    z-index: 1;
+}
+
+.menu button{
+    padding: 4px 16px;
+    margin: 8px;
+    gap: 8px;
+    
+    color: black;
+    letter-spacing: 4px;
+    background: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.08);
+
+    font-size: 14px;
+    font-weight: 200;
+    font-family: "Montserrat";
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+
+    display: inline-flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.menu img{
+    width: 2.8vw;
+}
+
+.menu .right button{
+    box-shadow: none;
+    font-weight: 200;
+    letter-spacing: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PRODUCT CONTAINER */
+.c{
+    height: auto;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8),rgba(216, 112, 147, 0.2));
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c .title{
+    height: 10vh;
+    width: 90vw;
+    background: none;
+    color: black;
+
+    padding: 8px;
+    text-align: center;    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+    font-weight: 900;
+    font-family: "Montserrat";
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 2vw;
+
+}
+
+
+.c .ps{
+    height: auto;
+    width: 88vw;
+    background: none;
+
+    margin: 16px;
+    padding: 8px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EACH PRODUCT */
+.c .ps .p{
+    width: 40vw;
+    height: auto;
+
+    border: none;
+    border-radius: 2px;
+
+    background: rgba(242, 255, 215, 0.2);
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.22);
+
+    margin: 2px;
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.c .ps .p img{
+    width: 28vh;
+    height: auto;
+    object-fit: cover;
+    background: none;
+    border: none;
+}
+
+.c .ps .p .pname{
+
+    color: rgba(0, 0, 0, 0.8);
+
+    font-size: 14px;
+    font-weight: 800;
+    font-family: "Montserrat";
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: start;
+}
+
+.c .ps .p .pinfo{
+    color: black;
+    margin: 8px;
+    padding: 8px;
+
+    height: 6vh;
+    width: 100%;
+    background: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.c .ps .p .pinfo button{
+    background: none;
+    color: black;
+
+    padding: 4px 12px;
+
+    border: none;
+    border-radius: 2px;
+
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.1);
+
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer{
+    height: 50vh;
+    width: auto;
+    
+    background: linear-gradient(rgba(216, 112, 147, 0.2), white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer .left, footer .right{
+    height: 32vh;
+    width: 32vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px 24px;
+    gap: 18px;
+
+    text-decoration: underline rgba(0, 0, 0, 0.1);
+
+    font-size: 14px;
+    font-weight: 200;
+    font-family: "Montserrat";
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    border: none;
+    background: none;
+}
+
+footer span {
+    cursor: pointer;
+    color: black;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+
+footer .loadmore{
+    font-size: 42px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 2px 4px 2px rgba(0, 0, 0, 0.1);
+
+    border: none;
+    border-radius: 4px;
+    padding: 6px 24px;
+
+    background: rgba(216, 112, 147, 0.5);
+
+}
+
+
+
+
+
+
+
+
+/* HOVER */
+
+footer .loadmore:hover{
+    background: palevioletred;
+    cursor: pointer;
+}
+
+.c .ps .p .pinfo button:hover{
+    background: palevioletred;
+}
+
+.menu button:hover{
+    background: rgba(216, 112, 147, 0.5);
+
+.c .ps .p:hover{
+    background: rgba(216, 112, 147, 0.2);
+}
+
+footer span:hover{
+    background: rgba(216, 112, 147, 0.8);
+    border: none;
+    border-radius: 16px;
+}
+
+nav .right div:hover{    
+    background: palevioletred;
+    border: none;
+    border-radius: 16px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+
+.c .ps .p img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* ACTIVE */
+
+.c .ps .p .pinfo button:active{
+    background: palevioletred;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.142);
+}
+
+.menu button:active{
+    background: rgba(150, 210, 255, 1);
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
